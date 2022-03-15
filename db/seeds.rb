@@ -29,6 +29,15 @@ cat1 = Category.find_or_create_by! name: 'Apparel'
 cat2 = Category.find_or_create_by! name: 'Electronics'
 cat3 = Category.find_or_create_by! name: 'Furniture'
 
+Account.create!({
+  Fname:  'Jungle',
+  Lname:  'Book',
+  email:  'jungle@hotmail.com',
+  password: "book"
+})
+
+
+
 ## PRODUCTS
 
 puts "Re-creating Products ..."
