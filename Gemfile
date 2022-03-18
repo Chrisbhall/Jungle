@@ -42,6 +42,7 @@ group :test do
   gem 'capybara'
   gem 'poltergeist'
   gem 'database_cleaner'
+  gem 'phantomjs', :require => 'phantomjs/poltergeist'
 end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
