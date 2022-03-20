@@ -2,9 +2,6 @@ Rails.application.routes.draw do
 
   root to: 'products#index'
   get '/about'=> 'about_controller#show'
-  #resources :about [:show]
-  #get '/account'=> 'account#index'
-  #resources :accounts, only: [:index, :show]
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
@@ -15,17 +12,24 @@ Rails.application.routes.draw do
 
   resources :orders, only: [:create, :show]
 
-  namespace :account do
-    root to: '/account#index'
-    resources :accounts, except: [:edit, :update, :show]
-  end
-
   namespace :admin do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
     resources :categories, except: [:edit, :update, :show]
   end
+Rails.application.routes.draw do
 
+  #root to: 'gif#cool'
+
+  # these routes are for showing users a login form, logging them in, and logging them out.
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+  
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
