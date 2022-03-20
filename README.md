@@ -31,3 +31,13 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+* bcrypt
+
+## Final Product
+* Home Page
+<img width="960" alt="Jungle2" src="https://user-images.githubusercontent.com/49577455/159155829-cc5d45a5-ffd8-4386-a244-d67db8f451b0.PNG">
+* Order Page
+<img width="947" alt="Jungle3" src="https://user-images.githubusercontent.com/49577455/159155830-806279ed-ae4d-449c-9050-92e6bae35248.PNG">
+* Sign Up Page
+<img width="960" alt="Jungle" src="https://user-images.githubusercontent.com/49577455/159155832-cb475bb1-c18a-4f77-98bd-c03bb2f3311b.PNG">
+
