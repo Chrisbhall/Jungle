@@ -29,6 +29,15 @@ cat1 = Category.find_or_create_by! name: 'Apparel'
 cat2 = Category.find_or_create_by! name: 'Electronics'
 cat3 = Category.find_or_create_by! name: 'Furniture'
 
+Account.create!({
+  Fname:  'Jungle',
+  Lname:  'Book',
+  email:  'jungle@hotmail.com',
+  password: "book"
+})
+
+
+
 ## PRODUCTS
 
 puts "Re-creating Products ..."
@@ -55,7 +64,7 @@ cat1.products.create!({
   name:  'Hipster Hat',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel3.jpg'),
-  quantity: 4,
+  quantity: 0,
   price: 34.49
 })
 
@@ -96,7 +105,7 @@ cat2.products.create!({
   name:  'Hotdog Slicer',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('electronics2.jpg'),
-  quantity: 3,
+  quantity: 0,
   price: 26.00
 })
 
